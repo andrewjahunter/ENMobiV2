@@ -78,48 +78,52 @@
 
     <div data-role="panel" class="ui-body-f" data-swipe-close="false"  id="appMenuPanel" data-position="right" data-display="push" style="display: none; background-color: #303030 ">
 
+        <div id="appMenuPanelContent">
 
-        <ul data-role="listview" class="ui-mini" data-inset="true" data-theme="f">
-            <li data-icon="user"><a href="#" id="btnAppMenuGoProfile">Profile</a></li>
-            <li data-icon="news"><a href="#" id="btnAppMenuGoNews">News</a></li>
-            <li data-icon="give" class="givingModule"><a href="#" id="btnAppMenuGoGive">Give</a></li>
 
-            <li data-icon="calendar" class="eventsModule"><a href="#" id="btnAppMenuGoEvents">Events</a></li>
-            <li data-icon="sermons" class="sermonsModule"><a href="#" id="btnAppMenuGoSermons">Sermons</a></li>
-            <li data-icon="group" class="groupsModule" id="btnAppMenuGoGroups"><a href="#">Groups</a></li>
-            <li data-icon="searchpeople"><a href="#" id="btnAppMenuGoPeople">Search People</a></li>
-            <li data-icon="mail"><a href="#" id="btnAppMenuGoMessages">Messages</a></li>
-            <li data-icon="findachurch"><a href="#" id="btnAppMenuGoFindAChurch">Find Church</a></li>
 
-            <li data-icon="missions"><a href="#" id="btnAppMenuGoMissions">Missions</a></li>
-            <li data-icon="subscribe"><a href="#" id="btnAppMenuGoSubs">Manage Subsriptions</a></li>
-            <li data-icon="bullets" class="customListsModule"><a href="#" id="btnAppMenuGoLists">Lists</a></li>
+            <ul data-role="listview" class="ui-mini" data-inset="true" data-theme="f">
+                <li data-icon="user"><a href="#" id="btnAppMenuGoProfile">Profile</a></li>
+                <li data-icon="news"><a href="#" id="btnAppMenuGoNews">News</a></li>
+                <li data-icon="give" class="givingModule"><a href="#" id="btnAppMenuGoGive">Give</a></li>
 
-            <li data-icon="gear"><a href="#" id="btnAppMenuGoSettings">Settings</a></li>
-        </ul>
+                <li data-icon="calendar" class="eventsModule"><a href="#" id="btnAppMenuGoEvents">Events</a></li>
+                <li data-icon="sermons" class="sermonsModule"><a href="#" id="btnAppMenuGoSermons">Sermons</a></li>
+                <li data-icon="group" class="groupsModule" id="btnAppMenuGoGroups"><a href="#">Groups</a></li>
+                <li data-icon="searchpeople"><a href="#" id="btnAppMenuGoPeople">Search People</a></li>
+                <li data-icon="mail"><a href="#" id="btnAppMenuGoMessages">Messages</a></li>
+                <li data-icon="findachurch"><a href="#" id="btnAppMenuGoFindAChurch">Find Church</a></li>
 
-        <div style="display:none; font-size:small" class="ui-bar ui-bar-e" id="appStopMessage"></div>
-        <div style="display:none; font-size:small" class="ui-bar ui-bar-d" id="appNoticeMessage"></div>
+                <li data-icon="missions"><a href="#" id="btnAppMenuGoMissions">Missions</a></li>
+                <li data-icon="subscribe"><a href="#" id="btnAppMenuGoSubs">Manage Subsriptions</a></li>
+                <li data-icon="bullets" class="customListsModule"><a href="#" id="btnAppMenuGoLists">Lists</a></li>
 
+                <li data-icon="gear"><a href="#" id="btnAppMenuGoSettings">Settings</a></li>
+            </ul>
+
+            <div style="display:none; font-size:small" class="ui-bar ui-bar-e" id="appStopMessage"></div>
+            <div style="display:none; font-size:small" class="ui-bar ui-bar-d" id="appNoticeMessage"></div>
+        </div>
     </div>
 
 
     <div data-role="panel" class="ui-body-f" data-swipe-close="false" id="appSettingsPanel" data-position="right" data-display="push" style="display: none; background-color: #303030 ">
+        <div id="appSettingsPanelContent">
 
+            <ul data-role="listview" class="ui-mini" data-inset="true" data-theme="f">
+                <li data-icon="switchdb"><a href="#" id="btnSettingsMenuGoSwitchDb">Switch Database</a></li>
+                <li data-icon="loginupdate"><a href="#" id="btnSettingsMenuGoSecProfile">Update Login</a></li>
+                <li data-icon="permissions" class="mngPermissionsModule"><a href="#" id="btnSettingsMenuGoMngSecProfile">Permission Requests</a></li>
+                <li data-icon="signout"><a href="#" id="btnSettingsMenuSignOut">Sign Out</a></li>
+                <li data-icon="question"><a href="#" id="btnSettingsMenuAbout">About</a></li>
+                <li data-icon="info"><a href="#" id="btnSettingsMenuSession">Session Info</a></li>
 
-        <ul data-role="listview" class="ui-mini" data-inset="true" data-theme="f">
-            <li data-icon="switchdb"><a href="#" id="btnSettingsMenuGoSwitchDb">Switch Database</a></li>
-            <li data-icon="loginupdate"><a href="#" id="btnSettingsMenuGoSecProfile">Update Login</a></li>
-            <li data-icon="permissions" class="mngPermissionsModule"><a href="#" id="btnSettingsMenuGoMngSecProfile">Permission Requests</a></li>
-            <li data-icon="signout"><a href="#" id="btnSettingsMenuSignOut">Sign Out</a></li>
-            <li data-icon="question"><a href="#" id="btnSettingsMenuAbout">About</a></li>
-            <li data-icon="info"><a href="#" id="btnSettingsMenuSession">Session Info</a></li>
+                <li data-icon="bars"><a href="#" id="btnSettingsMenuGoMainMenu">Main Menu</a></li>
 
-            <li data-icon="bars"><a href="#" id="btnSettingsMenuGoMainMenu">Main Menu</a></li>
+            </ul>
+        </div>
 
-        </ul>
-
-    </div>
+        </div>
 
 
 
@@ -146,7 +150,7 @@
                 <div class="pgContent">
 
 
-                    <img src="img/inapplogo.png" style="margin-bottom:5px; display:block; margin-left:auto; margin-right:auto" />
+                    <img src="img/inapplogo.png"  style="margin-bottom: 5px; max-height: 100px; max-width: 100%; display: block; margin-left: auto; margin-right: auto" />
 
                     <!--<div class="idxview idxloading" >
 
@@ -481,7 +485,7 @@
 
 
 
-                        <div>
+                        <div class="ui-content">
                             The email address connected to this account has not yet been verified. Please click the link in the email we sent to you. Click 'Resend Email' below to have the email resent to you.
                         </div>
 
