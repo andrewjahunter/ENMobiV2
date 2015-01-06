@@ -13,7 +13,7 @@
     <div data-role="page" id="pg_profile" data-theme="b" data-bind="with:pages.profile.view">
 
         <div data-role="header">
-            <a href="#" class="ui-btn ui-btn-a ui-btn-left ui-icon-arrow-l ui-btn-icon-notext profileView profileAddressListView profileAddressListViewBack "></a>
+            <a href="#" class="ui-btn ui-btn-a ui-btn-left ui-icon-arrow-l ui-btn-icon-notext profileView profileAddressListView profileAddressListViewBack  " style="display:none"></a>
          
 
             <!--<a href="#" class="ui-btn ui-btn-a ui-btn-left ui-icon-arrow-l ui-btn-icon-notext profileView profileAccountView  btnBackToPrevPage"></a>-->
@@ -22,7 +22,7 @@
             <h3 id="profileHeader">Profile</h3>
         </div><!-- /header -->
 
-        <div role="main" class="ui-content">
+        <div role="main" class="ui-content footerFix" >
             <div class="pgContent">
 
                 <div class="profileView profileAccountView" style="display:none">
@@ -179,9 +179,9 @@
                 </div>
             </div>
         </div>
+        
 
-
-        <div data-role="footer" data-theme="g" data-tap-toggle="true" style="overflow:hidden;" data-position="fixed">
+        <div data-role="footer" data-theme="g" data-tap-toggle="true" data-position="fixed">
 
 
             <div data-role="navbar" class="profileView profileAccountView" style="display:none">
@@ -194,7 +194,7 @@
 
             <div data-role="navbar" class="profileView profileAddressListView" style="display:none">
                 <ul>
-                    
+
                     <li><div class="ui-btn ui-btn-c ui-btn-icon-top ui-icon-plus " id="btnAddNewAddress"><small>Add New Address</small></div></li>
 
                 </ul>
