@@ -40,7 +40,7 @@
         <div data-role="header">
             <!--<a href="#" class="ui-btn ui-btn-a ui-btn-left ui-icon-arrow-l ui-btn-icon-notext btnBackToPrevPage"></a>-->
 
-            <a href="#" class="ui-btn ui-btn-a ui-btn-right ui-icon-bars ui-btn-icon-notext btnOpenAppMenu"></a>
+            <a href="#" class="noBorderButton ui-nodisc-icon ui-btn ui-btn-a ui-btn-right ui-icon-bars ui-btn-icon-notext btnOpenAppMenu"></a>
 
             <h3>Subscriptions</h3>
         </div><!-- /header -->
@@ -91,7 +91,7 @@
                     </div>
 
                     <div class="ui-bar ui-bar-f" style="text-align:center">
-                        <small>Click the '✓' to subscribe to any of of the churches below</small>
+                        <small>Click the '✓' to subscribe to any of the churches below</small>
                     </div>
                     <div data-bind="foreach: ko.utils.arrayFilter(subs(), function(itm){ return !itm.subscribed})">
                         <div class="ui-bar ui-bar-g" style="text-align: center">

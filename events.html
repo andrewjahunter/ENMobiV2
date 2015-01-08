@@ -20,13 +20,13 @@
         </style>
 
         <div data-role="header">
-            <a href="#" class="ui-btn ui-btn-a ui-btn-left ui-icon-arrow-d ui-btn-icon-notext eventView eventQrCodeView btnEventViewBack" style="display:none"></a>
-            <a href="#" class="ui-btn ui-btn-a ui-btn-left ui-icon-arrow-l ui-btn-icon-notext eventView eventRegisterView eventAttendanceView btnEventViewBack" style="display:none"></a>
+            <a href="#" class="ui-btn ui-btn-a ui-btn-left noBorderButton ui-nodisc-icon ui-icon-arrow-d ui-btn-icon-notext eventView eventQrCodeView btnEventViewBack" style="display:none"></a>
+            <a href="#" class="ui-btn ui-btn-a ui-btn-left noBorderButton ui-nodisc-icon ui-icon-arrow-l ui-btn-icon-notext eventView eventRegisterView eventAttendanceView btnEventViewBack" style="display:none"></a>
 
         
 
             <!--<a href="#" class="ui-btn ui-btn-a ui-btn-left ui-icon-arrow-l ui-btn-icon-notext eventView  eventListView noEventsView  btnBackToPrevPage"></a>-->
-            <a href="#" class="ui-btn ui-btn-a ui-btn-right ui-icon-bars ui-btn-icon-notext btnOpenAppMenu"></a>
+            <a href="#" class="ui-btn ui-btn-a ui-btn-right noBorderButton ui-nodisc-icon ui-icon-bars ui-btn-icon-notext btnOpenAppMenu"></a>
 
             <h3 id="eventsHeader">Events</h3>
         </div><!-- /header -->
@@ -126,7 +126,7 @@
                                 <tr>
                                     <td>
                                         <div class="ui-btn ui-btn-c ui-mini ui-btn-inline evNotComing" data-bind="attr: {'data-id': eventId}, visible:(coming === 0) ? false:true  ">Not coming</div>
-                                        <div class="ui-btn ui-btn-e ui-mini ui-btn-inline evComing" data-bind="attr: {'data-id': eventId}, visible:(coming === 1) ? false:true  ">Register</div>
+                                        <div class="ui-btn ui-btn-e ui-mini ui-btn-inline evComing" data-bind="attr: {'data-id': eventId}, visible:(coming === 1) ? false:true  ">Coming</div>
 
 
 
