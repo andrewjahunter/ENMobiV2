@@ -14,8 +14,8 @@
 
         <style>
             .comingImg {
-                width: 40px;
-                height: 40px;
+                width: 25px;
+                height: 25px;
             }
         </style>
 
@@ -23,7 +23,7 @@
             <a href="#" class="ui-btn ui-btn-a ui-btn-left noBorderButton ui-nodisc-icon ui-icon-arrow-d ui-btn-icon-notext eventView eventQrCodeView btnEventViewBack" style="display:none"></a>
             <a href="#" class="ui-btn ui-btn-a ui-btn-left noBorderButton ui-nodisc-icon ui-icon-arrow-l ui-btn-icon-notext eventView eventRegisterView eventAttendanceView btnEventViewBack" style="display:none"></a>
 
-        
+
 
             <!--<a href="#" class="ui-btn ui-btn-a ui-btn-left ui-icon-arrow-l ui-btn-icon-notext eventView  eventListView noEventsView  btnBackToPrevPage"></a>-->
             <a href="#" class="ui-btn ui-btn-a ui-btn-right noBorderButton ui-nodisc-icon ui-icon-bars ui-btn-icon-notext btnOpenAppMenu"></a>
@@ -46,12 +46,10 @@
 
 
 
-                    <div class="ui-grid-a" id="btnUnsyncedEvRegInfo" style="display:none">
-
-                        <div class="ui-grid-a">
-                            <div class="ui-block-a"><button class="ui-btn ui-btn-d  ui-mini " id="btnSaveUnSyncedEvRegInfo">Sync</button></div>
-                            <div class="ui-block-b"><button class="ui-btn ui-btn-e ui-mini" id="btnDelUnsyncedEvRegInfo">Delete Cache</button></div>
-                        </div>
+                    <div id="btnUnsyncedEvRegInfo" style="display:none">
+                        <button class="ui-btn ui-btn-c custom-ui-mini ui-btn-inline  ui-mini " id="btnSaveUnSyncedEvRegInfo">Sync</button>
+                        <button class="ui-btn ui-btn-e custom-ui-mini ui-btn-inline ui-mini" id="btnDelUnsyncedEvRegInfo">Delete Cache</button>
+                      
 
 
 
@@ -64,6 +62,7 @@
                             <div style="text-align:center">
                                 <small data-bind="html: startDate + '(' + startTime + ')' "></small>
                             </div>
+
                             <span data-bind="visible:(coming === 1) ? true:false">
                                 <a href="#" class=" ui-btn-right ui-icon-carat-d ui-btn-icon-notext evMore " data-bind="attr:{'data-id':eventId}"></a>
                             </span>
@@ -113,25 +112,25 @@
                                 </td>
                             </tr>
                             <!--<tr data-bind="visible:(coming === 1) ? true:false  ">
-                        <td colspan="2">
-                            <div  style="text-align: left; font-size:small" data-bind="visible: isVolunteer">
-                                You have volunteered at this event. If you cannot volunteer any longer you can change this option from the menu.
-                            </div>
-                        </td>
-                    </tr>-->
+                                <td colspan="2">
+                                    <div  style="text-align: left; font-size:small" data-bind="visible: isVolunteer">
+                                        You have volunteered at this event. If you cannot volunteer any longer you can change this option from the menu.
+                                    </div>
+                                </td>
+                            </tr>-->
                         </table>
 
                         <div style="text-align:left">
+                           
+                           
+
                             <table width="100%">
                                 <tr>
                                     <td>
-                                        <div class="ui-btn ui-btn-c ui-mini ui-btn-inline evNotComing" data-bind="attr: {'data-id': eventId}, visible:(coming === 0) ? false:true  ">Not coming</div>
-                                        <div class="ui-btn ui-btn-e ui-mini ui-btn-inline evComing" data-bind="attr: {'data-id': eventId}, visible:(coming === 1) ? false:true  ">Coming</div>
+                                        <div class="ui-btn ui-btn-e ui-mini custom-ui-mini ui-btn-inline evNotComing" data-bind="attr: {'data-id': eventId}, visible:(coming === 0) ? false:true  "><small>Not coming</small></div>
+                                        <div class="ui-btn ui-btn-c ui-mini custom-ui-mini ui-btn-inline evComing" data-bind="attr: {'data-id': eventId}, visible:(coming === 1) ? false:true  "><small>Coming</small></div>
 
 
-
-
-                                        <!--<div class="ui-btn ui-btn-a ui-mini ui-btn-inline evMore" data-bind="attr: {'data-id': eventId}">More</div>-->
                                     </td>
                                     <td align="right">
                                         <div data-bind="visible:(coming === 0) ? true:false  ">
@@ -379,7 +378,7 @@
                 </div>
 
             </div>
-            </div>
+        </div>
 
 
         <div data-role="footer" data-theme="g" data-tap-toggle="false" style="overflow:hidden;" data-position="fixed">
@@ -387,13 +386,13 @@
 
             <div data-role="navbar" class="eventView eventListView eventRegisterView">
                 <ul>
-                
+
                     <li><div class="ui-btn ui-btn-g ui-btn-icon-top ui-icon-refresh btnReloadEvents "><small>Refresh Event List</small></div></li>
 
                 </ul>
             </div>
 
-          
+
 
 
         </div>

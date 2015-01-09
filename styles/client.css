@@ -1,4 +1,12 @@
 ﻿
 path {
-    fill: #ff0000;
+    fill: #718ebf;
+}
+
+.pathlight {
+    fill: #428ec4;
+}
+
+circle {
+    fill: #428ec4;
 }
